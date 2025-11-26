@@ -20,12 +20,16 @@
             }
             else if(RemyHobby == "Motorsykkel")
             {
-                Console.WriteLine("Remy freser runt på to hjul");
+                Console.WriteLine("Remy freser rundt på to hjul");
             }
             else
             {
                 Console.WriteLine($"Beklager {RemyHobby} er ikke en av Remy’s hobbyer. Han har bestemt seg for å ignorere deg.");
             }
+
+            
+            reader.Readline();
+            reader.Readline();
 
 
             Console.WriteLine($"La oss møte {person2.Name}!");
@@ -34,13 +38,25 @@
             string LeneHobby = Console.ReadLine();
             if (LeneHobby == person2.Hobby1)
             {
-                Console.WriteLine("hihi");
+                Console.WriteLine("Lene lager seg et lite hus i Minecraft!");
+            }
+            else if (LeneHobby = person2.Hobby2)
+            {
+                Console.WriteLine("Lene står og lager sin signaturkake!");
+            }
+            else if (LeneHobby = person2.Hobby3)
+            {
+                Console.WriteLine("Lene slår hodet i veggen mens hu lærer seg C#...");
+            }
+            else
+            {
+                Console.WriteLine($"Beklager {LeneHobby} er ikke en av Lene's hobbyer. Hun tar seg en kaffe istedenfor");
             }
 
 
 
 
-            Console.WriteLine("test4rd");
+                Console.WriteLine("test4rd");
         }
     }
 }
