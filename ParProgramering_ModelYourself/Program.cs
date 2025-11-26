@@ -7,6 +7,7 @@
             Console.WriteLine("Hello, World!");
             Console.WriteLine("test");
             Console.WriteLine("test2rd");
+            Console.WriteLine("test3rd");
         }
     }
 }
