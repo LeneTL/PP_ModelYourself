@@ -53,7 +53,7 @@
             Console.WriteLine($"Dette er {person2.Name}! \n{person2.Pronoun} er {person2.Age} år gammel, og kommer fra {person2.City}.\n{person2.Name}’s hobbyer er: \n{person2.Hobby1}, \n{person2.Hobby2}, \n{person2.Hobby3}");
             Console.WriteLine();
 
-            Console.WriteLine($"Hvilken hobby vil du {person2.Name} skal gjøre? ({person2.Hobby1}/{person2.Hobby2}/{person2.Hobby3})");
+            Console.WriteLine($"Hvilken hobby vil du {person2.Name} skal gjøre? ({person2.Hobby1}/{person2.Hobby2}/{person2.Hobby3}/Random)");
             string LeneHobby = Console.ReadLine();
             if (LeneHobby == person2.Hobby1)
             {
@@ -66,6 +66,23 @@
             else if (LeneHobby == person2.Hobby3)
             {
                 Console.WriteLine("Lene slår hodet i veggen mens hu lærer seg C#...");
+            }
+            else if (LeneHobby == "Random")
+            {
+                Random rand = new Random();
+                int randomHobby = rand.Next(0, 3);
+                if (randomHobby == 0)
+                {
+                    Console.WriteLine("Lene lager seg et lite hus i Minecraft!")
+                }
+                else if (randomHobby == 1)
+                {
+                    Console.WriteLine("Lene står og lager sin signaturkake!")
+                }
+                else if (randomHobby == 2)
+                {
+                    Console.WriteLine("Lene slår hodet i veggen mens hu lærer seg C#...")
+                }
             }
             else
             {
