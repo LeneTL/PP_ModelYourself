@@ -10,19 +10,36 @@
             Console.WriteLine($"Dette er {person1.Name}! \n{person1.Pronoun} er {person1.Age} år gammel, og kommer fra {person1.City}.\n{person1.Name}’s hobbyer er: \n{person1.Hobby1}, \n{person1.Hobby2}, \n{person1.Hobby3}");
             Console.WriteLine();
 
-            Console.WriteLine($"Hvilken hobby vil du {person1.Name} skal gjøre? ({person1.Hobby1}/{person1.Hobby2}/{person1.Hobby3})");
+            Console.WriteLine($"Hvilken hobby vil du {person1.Name} skal gjøre? ({person1.Hobby1}/{person1.Hobby2}/{person1.Hobby3}/Random)");
             string RemyHobby = Console.ReadLine();
-            if (RemyHobby == person1.Hobby1) 
+            if (RemyHobby == person1.Hobby1)
             {
                 Console.WriteLine("Remy slår løs på trommene!");
             }
-            else if(RemyHobby == person1.Hobby2)
+            else if (RemyHobby == person1.Hobby2)
             {
                 Console.WriteLine("Remy står og fisker i ro og mak");
             }
-            else if(RemyHobby == person1.Hobby3)
+            else if (RemyHobby == person1.Hobby3)
             {
                 Console.WriteLine("Remy freser rundt på to hjul");
+            }
+            else if (RemyHobby == "Random")
+            {
+                Random rand = new Random();
+                int randomHobby = rand.Next(0,3);
+                if (randomHobby == 0)
+                {
+                    Console.WriteLine("Remy slår løs på trommene!");
+                }
+                else if (randomHobby == 1)
+                {
+                    Console.WriteLine("Remy står og fisker i ro og mak");
+                }
+                else if (randomHobby == 2)
+                {
+                    Console.WriteLine("Remy freser rundt på to hjul");
+                }
             }
             else
             {
