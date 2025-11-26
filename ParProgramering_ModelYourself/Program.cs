@@ -27,12 +27,14 @@
                 Console.WriteLine($"Beklager {RemyHobby} er ikke en av Remy’s hobbyer. Han har bestemt seg for å ignorere deg.");
             }
 
-            
-            reader.Readline();
-            reader.Readline();
+
+            Console.WriteLine();
 
 
             Console.WriteLine($"La oss møte {person2.Name}!");
+
+            Console.WriteLine();
+
             Console.WriteLine($"Dette er {person2.Name}! \n{person2.Pronoun} er {person2.Age} år gammel, og kommer fra {person2.City}.\n{person2.Name}’s hobbyer er: \n{person2.Hobby1}, \n{person2.Hobby2}, \n{person2.Hobby3}");
             Console.WriteLine($"Hvilken hobby vil du {person2.Name} skal gjøre?");
             string LeneHobby = Console.ReadLine();
@@ -40,11 +42,11 @@
             {
                 Console.WriteLine("Lene lager seg et lite hus i Minecraft!");
             }
-            else if (LeneHobby = person2.Hobby2)
+            else if (LeneHobby == person2.Hobby2)
             {
                 Console.WriteLine("Lene står og lager sin signaturkake!");
             }
-            else if (LeneHobby = person2.Hobby3)
+            else if (LeneHobby == person2.Hobby3)
             {
                 Console.WriteLine("Lene slår hodet i veggen mens hu lærer seg C#...");
             }
