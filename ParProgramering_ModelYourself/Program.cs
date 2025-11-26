@@ -32,7 +32,7 @@
             Console.WriteLine($"Dette er {person2.Name}! \n{person2.Pronoun} er {person2.Age} år gammel, og kommer fra {person2.City}.\n{person2.Name}’s hobbyer er: \n{person2.Hobby1}, \n{person2.Hobby2}, \n{person2.Hobby3}");
             Console.WriteLine($"Hvilken hobby vil du {person2.Name} skal gjøre?");
             string LeneHobby = Console.ReadLine();
-            if (LeneHobby == "Gaming")
+            if (LeneHobby == person2.Hobby1)
             {
                 Console.WriteLine("hihi");
             }
